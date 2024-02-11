@@ -1,0 +1,26 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Benin {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(#fcd116 0 50%, #e8112d 0 100%);
+  position: relative;
+}
+.Benin::before {
+  content: "";
+  width: 120px;
+  height: 150px;
+  background-color: #008751;
+  position: absolute;
+}

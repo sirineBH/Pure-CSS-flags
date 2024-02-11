@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Congo-Brazzaville {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(
+    145deg,
+    rgb(0, 147, 67) 0 42%,
+    rgb(251, 222, 74) 0 58%,
+    rgb(220, 36, 31) 0 100%
+  );
+}

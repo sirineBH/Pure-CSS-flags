@@ -1,0 +1,23 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Chad {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(
+    90deg,
+    rgb(0, 32, 91) 0 33%,
+    rgb(255, 205, 0) 0 66%,
+    rgb(200, 16, 46) 0 100%
+  );
+}

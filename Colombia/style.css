@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Colombia {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(
+    rgb(252, 209, 22) 0 50%,
+    rgb(0, 56, 147) 0 75%,
+    rgb(206, 17, 38) 0 100%
+  );
+}
