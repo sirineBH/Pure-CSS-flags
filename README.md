@@ -8,5 +8,6 @@ Here, we're on a mission to recreate flags of every country using nothing but th
 Why not? I love challenges, and what's more challenging (and fun!) than recreating intricate designs using only the tools at our disposal?
 
 # Inspiration Source
-I got this idea from CSS Battle #29.
-[CSS Battle #29](https://cssbattle.dev/battle/29)
+I got this idea from [CSS Battle #29](https://cssbattle.dev/battle/29)
+
+🔥👩‍💻🎨
