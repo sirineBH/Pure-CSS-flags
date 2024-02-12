@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Finland {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(
+      90deg,
+      transparent,
+      transparent 30%,
+      white 30%,
+      white 40%,
+      transparent 40%,
+      transparent
+    ),
+    linear-gradient(
+      0deg,
+      rgb(0, 53, 128),
+      rgb(0, 53, 128) 43%,
+      white 43%,
+      white 58%,
+      rgb(0, 53, 128) 58%,
+      rgb(0, 53, 128)
+    );
+}
