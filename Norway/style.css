@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Norway {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(
+      90deg,
+      transparent,
+      transparent 30%,
+      white 30%,
+      white 40%,
+      transparent 40%,
+      transparent
+    ),
+    linear-gradient(
+      0deg,
+      rgb(239, 43, 45),
+      rgb(239, 43, 45) 43%,
+      white 43%,
+      white 58%,
+      rgb(239, 43, 45) 58%,
+      rgb(239, 43, 45)
+    );
+
+  position: relative;
+}
+.Norway::after,
+.Norway::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(0, 40, 104);
+}
+
+.Norway::after {
+  height: 150px;
+  width: 20px;
+  left: 95px;
+}
+
+.Norway::before {
+  height: 15px;
+  width: 300px;
+  top: 67px;
+}
