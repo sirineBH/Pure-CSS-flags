@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Yemen {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(
+    rgb(210, 16, 52) 33%,
+    rgb(255, 255, 255) 0 66%,
+    rgb(0, 0, 0) 0 100%
+  );
+}
