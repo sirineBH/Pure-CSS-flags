@@ -1,0 +1,35 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Sweden {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(
+      90deg,
+      transparent,
+      transparent 30%,
+      rgb(254, 204, 0) 30%,
+      rgb(254, 204, 0) 40%,
+      transparent 40%,
+      transparent
+    ),
+    linear-gradient(
+      0deg,
+      rgb(0, 106, 167),
+      rgb(0, 106, 167) 43%,
+      rgb(254, 204, 0) 43%,
+      rgb(254, 204, 0) 58%,
+      rgb(0, 106, 167) 58%,
+      rgb(0, 106, 167)
+    );
+}
