@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Sudan {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(
+    rgb(210, 16, 52) 33%,
+    rgb(255, 255, 255) 0 66%,
+    rgb(0, 0, 0) 0 100%
+  );
+  position: relative;
+}
+
+.Sudan::before {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 150px;
+  background-color: rgb(0, 114, 41);
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
