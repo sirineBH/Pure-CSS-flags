@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Bahrain {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(90deg, white 0 30%, rgb(206, 17, 38) 0);
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.triangle {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  left: 89px;
+  top: var(--topValue, 0);
+}
