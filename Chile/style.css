@@ -1,0 +1,49 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Chile {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(rgb(255, 255, 255) 50%, rgb(213, 43, 30) 0 100%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+}
+
+.Chile::before {
+  content: "";
+  background-color: rgb(0, 57, 166);
+  width: 75px;
+  height: 75px;
+}
+
+.Chile::after {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  margin: 0.781rem 0 0 -3.906rem;
+}
