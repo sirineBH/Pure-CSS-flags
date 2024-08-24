@@ -1,0 +1,53 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Togo {
+  width: 300px;
+  height: 150px;
+  background: repeating-linear-gradient(
+    rgb(0, 106, 78),
+    rgb(0, 106, 78) 20%,
+    rgb(255, 206, 0) 20%,
+    rgb(255, 206, 0) 40%
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.Togo::before {
+  content: "";
+  background-color: rgb(210, 16, 52);
+  width: 90px;
+  height: 90px;
+}
+
+.Togo::after {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  width: 70px;
+  height: 70px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  margin: 0.5rem 0 0 -5rem;
+}
