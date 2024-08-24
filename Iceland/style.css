@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Iceland {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(
+      90deg,
+      transparent,
+      transparent 28%,
+      rgb(255, 255, 255) 28%,
+      rgb(255, 255, 255) 40%,
+      transparent 40%,
+      transparent
+    ),
+    linear-gradient(
+      0deg,
+      rgb(0, 48, 135),
+      rgb(0, 48, 135) 39%,
+      rgb(255, 255, 255) 39%,
+      rgb(255, 255, 255) 62%,
+      rgb(0, 48, 135) 62%,
+      rgb(0, 48, 135)
+    );
+
+  position: relative;
+}
+.Iceland::after,
+.Iceland::before {
+  content: "";
+  position: absolute;
+  background-color: rgb(213, 0, 50);
+}
+
+.Iceland::after {
+  height: 150px;
+  width: 15px;
+  left: 95px;
+}
+
+.Iceland::before {
+  height: 15px;
+  width: 300px;
+  top: 67px;
+}
