@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Suriname {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(
+    rgb(0, 122, 51) 25%,
+    rgb(255, 255, 255) 0 30%,
+    rgb(200, 16, 46) 0 70%,
+    rgb(255, 255, 255) 0 75%,
+    rgb(0, 122, 51) 0 100%
+  );
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Suriname::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: rgb(255, 205, 0);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
