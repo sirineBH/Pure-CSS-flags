@@ -1,0 +1,67 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Micronesia {
+  width: 300px;
+  height: 150px;
+  background-color: rgb(117, 178, 221);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stars {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 20px;
+  grid-template-areas:
+    ". star1 ."
+    "star2 . star3"
+    ". star4 .";
+  justify-items: center;
+}
+
+.star {
+  width: 25px;
+  height: 25px;
+  background-color: rgb(255, 255, 255);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+.star[data-number="1"] {
+  grid-area: star1;
+}
+.star[data-number="2"] {
+  grid-area: star2;
+  transform: rotate(45deg);
+}
+.star[data-number="3"] {
+  grid-area: star3;
+  transform: rotate(-45deg);
+}
+.star[data-number="4"] {
+  grid-area: star4;
+  transform: rotate(45deg);
+}
