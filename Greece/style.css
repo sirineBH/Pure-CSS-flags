@@ -1,0 +1,51 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Greece {
+  width: 300px;
+  height: 150px;
+  background: repeating-linear-gradient(
+    rgb(13, 94, 175),
+    rgb(13, 94, 175) 11%,
+    rgb(255, 255, 255) 11%,
+    rgb(255, 255, 255) 22.5%
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+}
+
+.Greece::before {
+  content: "";
+  width: 83px;
+  height: 83px;
+  background: linear-gradient(
+      90deg,
+      transparent,
+      transparent 40%,
+      rgb(255, 255, 255) 40%,
+      rgb(255, 255, 255) 55%,
+      transparent 55%,
+      transparent
+    ),
+    linear-gradient(
+      0deg,
+      rgb(13, 94, 175),
+      rgb(13, 94, 175) 40%,
+      rgb(255, 255, 255) 40%,
+      rgb(255, 255, 255) 55%,
+      rgb(13, 94, 175) 55%,
+      rgb(13, 94, 175)
+    );
+}
