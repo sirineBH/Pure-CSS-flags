@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Liberia {
+  width: 300px;
+  height: 150px;
+  background: repeating-linear-gradient(
+    rgb(191, 10, 84),
+    rgb(191, 10, 84) 13.6px,
+    rgb(255, 255, 255) 13.6px,
+    rgb(255, 255, 255) 27.2px
+  );
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid #ddd;
+}
+
+.Liberia::before {
+  content: "";
+  background-color: rgb(0, 40, 104);
+  width: 68px;
+  height: 68px;
+}
+
+.Liberia::after {
+  content: "";
+  background-color: rgb(255, 255, 255);
+  width: 50px;
+  height: 50px;
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  margin: 0.6rem 0 0 -3.65rem;
+}
