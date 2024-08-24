@@ -1,0 +1,32 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Qatar {
+  width: 375px;
+  height: 150px;
+  background: linear-gradient(90deg, white 0 30%, rgb(141, 27, 61) 0);
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.triangle {
+  position: absolute;
+  width: 16.6px;
+  height: 16.6px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  left: 112px;
+  top: var(--topValue, 0);
+}
