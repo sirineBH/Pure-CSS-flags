@@ -1,0 +1,57 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.South-Sudan {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(
+    rgb(0, 0, 0) 30%,
+    rgb(255, 255, 255) 0 35%,
+    rgb(218, 18, 26) 0 65%,
+    rgb(255, 255, 255) 0 70%,
+    rgb(18, 173, 43) 0 100%
+  );
+  position: relative;
+}
+
+.South-Sudan::before {
+  content: "";
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background-color: rgb(15, 71, 175);
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+.South-Sudan::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  top: 50px;
+  left: 25px;
+  transform: rotate(45deg);
+  background-color: rgb(252, 221, 9);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
