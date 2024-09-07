@@ -1,0 +1,22 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Seychelles {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(172deg, transparent 78%, rgb(0, 122, 61) 45%),
+    linear-gradient(162deg, transparent 60%, rgb(255, 255, 255) 45%),
+    linear-gradient(144deg, transparent 40%, rgb(214, 40, 40) 40%),
+    linear-gradient(124deg, transparent 25%, rgb(252, 216, 86) 25%),
+    rgb(0, 63, 135);
+}
