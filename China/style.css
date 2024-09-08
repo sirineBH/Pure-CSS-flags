@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.China {
+  width: 300px;
+  height: 150px;
+  background-color: rgb(238, 28, 37);
+  position: relative;
+}
+
+.star {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgb(255, 255, 0);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
+
+.star--big {
+  width: 50px;
+  height: 50px;
+  top: 15%;
+  left: 5%;
+}
+
+.star[data-star="1"] {
+  top: 8%;
+  left: 22%;
+  transform: rotate(-45deg);
+}
+
+.star[data-star="2"] {
+  top: 20%;
+  left: 26%;
+  transform: rotate(45deg);
+}
+
+.star[data-star="3"] {
+  top: 35%;
+  left: 26%;
+}
+
+.star[data-star="4"] {
+  top: 50%;
+  left: 22%;
+  transform: rotate(-45deg);
+}
