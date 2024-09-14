@@ -1,0 +1,56 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Cuba {
+  width: 300px;
+  height: 150px;
+  background: repeating-linear-gradient(
+    rgb(0, 42, 143),
+    rgb(0, 42, 143) 20%,
+    rgb(255, 255, 255) 20%,
+    rgb(255, 255, 255) 40%
+  );
+  border: 1px solid #ddd;
+  position: relative;
+}
+
+.Cuba::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: rgb(207, 20, 43);
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+  position: absolute;
+}
+
+.Cuba::after {
+  content: "";
+  width: 70px;
+  height: 70px;
+  background-color: rgb(255, 255, 255);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+  position: absolute;
+  top: 35px;
+  left: 20px;
+}
