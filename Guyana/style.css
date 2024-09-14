@@ -1,0 +1,63 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Guyana {
+  width: 300px;
+  height: 150px;
+  background-color: rgb(0, 158, 73);
+  position: relative;
+}
+
+.Guyana::before,
+.Guyana::after,
+.triangle::before {
+  content: "";
+  position: absolute;
+}
+
+.Guyana::before,
+.Guyana::after,
+.triangle,
+.triangle::before {
+  clip-path: polygon(0 0, 0% 100%, 100% 50%);
+}
+
+.Guyana::before {
+  width: 300px;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+}
+
+.Guyana::after {
+  width: 280px;
+  height: 130px;
+  background-color: rgb(252, 209, 22);
+  top: 10px;
+}
+
+.triangle {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(0, 0, 0);
+  position: absolute;
+  z-index: 1;
+}
+
+.triangle::before {
+  width: 110px;
+  height: 120px;
+  background-color: rgb(206, 17, 38);
+  top: 15px;
+}
