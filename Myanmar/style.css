@@ -1,0 +1,45 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Myanmar {
+  width: 300px;
+  height: 150px;
+  background: linear-gradient(
+    rgb(254, 203, 0) 0 33%,
+    rgb(52, 178, 51) 0 66%,
+    rgb(234, 40, 57) 0 100%
+  );
+}
+
+.Myanmar::after {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 255, 255);
+  clip-path: polygon(
+    50% 0%,
+    61% 35%,
+    98% 35%,
+    68% 57%,
+    79% 91%,
+    50% 70%,
+    21% 91%,
+    32% 57%,
+    2% 35%,
+    39% 35%
+  );
+}
